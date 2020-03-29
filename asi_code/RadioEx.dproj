@@ -1,0 +1,49 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{73025089-8c6f-4837-a556-15caa84527f6}</ProjectGuid>
+    <MainSource>RadioEx.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\RadioEx.asi</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>D:\Games\GTA Extreme Indonesia</DCC_ExeOutput>
+    <DCC_DcuOutput>../dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>../dcu</DCC_ObjOutput>
+    <DCC_HppOutput>../dcu</DCC_HppOutput>
+    <DCC_UnitSearchPath>../bass;../codehook;</DCC_UnitSearchPath>
+    <DCC_ResourcePath>../bass;../codehook;</DCC_ResourcePath>
+    <DCC_ObjPath>../bass;../codehook;</DCC_ObjPath>
+    <DCC_IncludePath>../bass;../codehook;</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_ExeOutput>../</DCC_ExeOutput>
+    <DCC_DcuOutput>../dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>../dcu</DCC_ObjOutput>
+    <DCC_HppOutput>../dcu</DCC_HppOutput>
+    <DCC_UnitSearchPath>../bass;../codehook;</DCC_UnitSearchPath>
+    <DCC_ResourcePath>../bass;../codehook;</DCC_ResourcePath>
+    <DCC_ObjPath>../bass;../codehook;</DCC_ObjPath>
+    <DCC_IncludePath>../bass;../codehook;</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="HostApplication">D:\Games\GTA Extreme Indonesia\gta_sa.exe</Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">True</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">1</VersionInfo><VersionInfo Name="Build">232</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1057</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Faris Khowarizmi</VersionInfoKeys><VersionInfoKeys Name="FileDescription">RadioEx for GTA: San Andreas</VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.1.232</VersionInfoKeys><VersionInfoKeys Name="InternalName">RadioEx</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Copyright © Faris Khowarizmi 2014</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks">RadioEx is licensed under LGPL</VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">RadioEx.asi</VersionInfoKeys><VersionInfoKeys Name="ProductName">RadioEx</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments">Coded by Faris Khowarizmi</VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">RadioEx.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="RadioEx.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+  </ItemGroup>
+</Project>
